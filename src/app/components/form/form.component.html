@@ -1,0 +1,25 @@
+<div class="card mt-5">
+    <div class="card-body">
+      <div class="mt-4">
+        <h2 class="heading">Filtra noticias por pais y categoria</h2>
+        <div class="row mt-3">
+            <div class="col-lg-8 offset-lg-2">
+                <form >
+                    <div class="form-group">
+                        <select name="categoria" class="form-select form-select-lg">
+                            <option [value]="i.value" *ngFor="let i of categories">{{i.name}}</option>
+                        </select>
+                      </div>
+                      <div class="form-group mt-3">
+                        <select name="pais" class="form-select form-select-lg">
+                            <option [value]="i.value" *ngFor="let i of countries">{{i.name}}</option>
+                        </select>
+                      </div>
+                      <button class="btn btn-primary btn-block btn-lg mt-3">Buscar</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
