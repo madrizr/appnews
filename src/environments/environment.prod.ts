@@ -4,5 +4,5 @@ export const environment = {
 
 export const newsApi = {
   production: true,
-  API_KEY: 'xxxx'
+  API_KEY: 'xxxxxxxxxxxxxx'
 }

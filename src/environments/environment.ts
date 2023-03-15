@@ -8,7 +8,7 @@ export const environment = {
 
 export const newsApi = {
   production: false,
-  API_KEY: 'xxxx'
+  API_KEY: 'xxxxxxxxxxxxxxxxxxxxxx'
 }
 
 /*
