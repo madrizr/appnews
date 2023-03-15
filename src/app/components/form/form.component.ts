@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+  @Output() paramsSelected = new EventEmitter<any>()
+  
+  selected_category: string = 'general';
+  selected_country: string = 've';
 
   categories: any[] = [
     { value: 'general', name: 'General'},
@@ -14,14 +18,21 @@ export class FormComponent implements OnInit {
   ]
 
   countries: any[] = [
-    { value: 'ven', name: 'Venezuela'},
-    { value: 'arg', name: 'Argentina'},
-    { value: 'mex', name: 'Mexico'}
+    { value: 've', name: 'Venezuela'},
+    { value: 'ar', name: 'Argentina'},
+    { value: 'mx', name: 'Mexico'}
   ]
-
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  searchNew(){
+    const params = {
+      category: this.selected_category,
+      country: this.selected_country
+    }
+    this.paramsSelected.emit(params)
   }
 
 }
