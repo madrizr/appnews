@@ -1,4 +1,4 @@
-# Y
+# App News
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.
 
@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Para que funcione
+
+Debes Registrarte en New Api para obtener la api key (https://newsapi.org/), luego incluir el key
+como variables de entorno en el directorio environments. Donde estan las 'xxxxx'

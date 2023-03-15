@@ -23,9 +23,11 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootswatch/dist/lux/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
@@ -90,9 +92,11 @@
               "src/assets"
             ],
             "styles": [
+              
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           }
         }
       }
