@@ -1,5 +1,6 @@
 <app-navbar [titulo]="'App News'"></app-navbar>
 <div class="container">
   <app-form (paramsSelected)="searchNews($event)"></app-form>
-  <app-list-news></app-list-news>
+  <app-spinner *ngIf="loading"></app-spinner>
+  <app-list-news [list_news]="list_news"></app-list-news>
 </div>
